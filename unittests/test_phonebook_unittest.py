@@ -1,7 +1,7 @@
 import unittest
 from unittest import TestCase
 
-from phonebook import Phonebook
+from unittests.phonebook import Phonebook
 
 
 class PhonebookTest(TestCase):
