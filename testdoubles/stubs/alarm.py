@@ -1,4 +1,4 @@
-from mocksandstubs.sensor import Sensor
+from testdoubles.stubs.sensor import Sensor
 
 class Alarm(object):
 

@@ -1,8 +1,8 @@
 import unittest
-from mocksandstubs.alarm import Alarm
-from mocksandstubs.stub_sensor import TestSensor
+from testdoubles.stubs.alarm import Alarm
+from testdoubles.stubs.stub_sensor import TestSensor
 from unittest.mock import Mock 
-from mocksandstubs.sensor import Sensor
+from testdoubles.stubs.sensor import Sensor
 
 class AlarmTest(unittest.TestCase):
 
