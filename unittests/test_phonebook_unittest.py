@@ -24,11 +24,14 @@ class PhonebookTest(TestCase):
         self.phonebook.add("Bob", "12345")
         self.phonebook.add("Mary", "67890")
         self.assertTrue(self.phonebook.is_consistent())
+
+    @unittest.skip("unimplemented feature")
     def test_phonebook_with_duplicate_entries_is_inconsistent(self):
         self.phonebook.add("Bob", "12345")
         self.phonebook.add("Mary", "12345")
         self.assertFalse(self.phonebook.is_consistent())
 
+    @unittest.skip("unimplemented feature")
     def test_phonebook_with_numbers_that_prefix_eachother_is_inconsistent(self):
         self.phonebook.add("Bob", "12345")
         self.phonebook.add("Mary", "123")
