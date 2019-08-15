@@ -1,5 +1,5 @@
 
-class TestSensor:
+class StubSensor:
 
     def __init__(self, pressure):
         self.pressure = pressure

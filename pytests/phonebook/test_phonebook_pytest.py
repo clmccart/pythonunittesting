@@ -1,4 +1,4 @@
-from pytests.phonebook import Phonebook
+from pytests.phonebook.phonebook import Phonebook
 import pytest
 
 @pytest.fixture

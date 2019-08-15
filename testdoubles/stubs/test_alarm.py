@@ -1,6 +1,6 @@
 import unittest
 from testdoubles.stubs.alarm import Alarm
-from testdoubles.stubs.stub_sensor import TestSensor
+from testdoubles.stubs.stub_sensor import StubSensor
 from unittest.mock import * 
 from testdoubles.stubs.sensor import Sensor
 
@@ -11,17 +11,17 @@ class AlarmTest(unittest.TestCase):
         self.assertFalse(alarm.is_alarm_on)
 
     def test_check_too_low_pressure_sounds_alarm(self):
-        alarm = Alarm(sensor=TestSensor(15))
+        alarm = Alarm(sensor=StubSensor(15))
         alarm.check()
         self.assertTrue(alarm.is_alarm_on)
 
     def test_check_too_high_pressure_sounds_alarm(self):
-        alarm = Alarm(sensor=TestSensor(22))
+        alarm = Alarm(sensor=StubSensor(22))
         alarm.check()
         self.assertTrue(alarm.is_alarm_on)
 
     def test_check_normal_pressure_doesnt_sound_alarm(self):
-        alarm = Alarm(sensor=TestSensor(18))
+        alarm = Alarm(sensor=StubSensor(18))
         alarm.check()
         self.assertFalse(alarm.is_alarm_on)
 
