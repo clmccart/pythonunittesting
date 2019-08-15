@@ -1,5 +1,5 @@
 def tennis_score(player1_points, player2_points):
-    game = TennisGame("Claire", "Farley")
+    game = TennisGame("Player 1", "Player 2")
     game.player1_points = player1_points
     game.player2_points = player2_points
     return game.score()
@@ -19,10 +19,10 @@ class TennisGame:
                 0: "Love-All",
                 1: "Fifteen-All",
                 2: "Thirty-All"
-            }.get(self.player1_points, "Duece")
+            }.get(self.player1_points, "Deuce")
         elif (self.player1_points >= 4 or self.player2_points >= 4):
             minus_result = self.player1_points - self.player2_points
-            if (minut_result == 1):
+            if (minus_result == 1):
                 result = "Advantage " + self.player1_name
             elif (minus_result == -1):
                 result = "Advantage " + self.player2_name

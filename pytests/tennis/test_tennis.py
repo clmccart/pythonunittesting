@@ -9,7 +9,16 @@ examples = (("expected_score", "player1_points", "player2_points"),
 ("Love-Fifteen", 0, 1),
 ("Fifteen-Love", 1, 0),
 ("Thirty-Fifteen", 2, 1),
-("Forty-Thirty", 3, 2)
+("Forty-Thirty", 3, 2),
+("Advantage Player 1", 4, 3),
+("Advantage Player 2", 3, 4),
+("Advantage Player 1", 23, 22),
+("Deuce", 3, 3),
+("Deuce", 4, 4),
+("Deuce", 14, 14),
+("Win for Player 1", 4, 0),
+("Win for Player 2", 1, 4),
+("Win for Player 1", 6, 4)
 ])
 
 @pytest.mark.parametrize(*examples)
